@@ -1,0 +1,134 @@
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"user callled\":{\"id\":\"5c6c0d281f66153414b95585\"}}","level":"info"}
+{"errors":{"last_name":{"message":"Enter a last name","name":"ValidatorError","properties":{"message":"Enter a last name","type":"required","path":"last_name"},"kind":"required","path":"last_name"},"first_name":{"message":"Enter a first name","name":"ValidatorError","properties":{"message":"Enter a first name","type":"required","path":"first_name"},"kind":"required","path":"first_name"}},"_message":"User validation failed","message":"User validation failed: last_name: Enter a last name, first_name: Enter a first name","name":"ValidationError","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTQ1NDc5MSwiZXhwIjoxNTUxNTQxMTkxfQ.6AoddKGOJUDpWD6BGMNWMnch8nNAlDsGemtpM17mFpg\"}}","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId 5c75056056c8570eed396deb","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"userId updateComment","level":"info"}
+{"message":"update called failed","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"user comment updated","level":"info"}
