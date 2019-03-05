@@ -16,12 +16,65 @@ export class UserLib {
         return bcrypt.compareSync(password, hash);
     }
 
-    public async getUsers(): Promise<IUser[]> {
-        return userModel.find();
+    public async getUsers(req:any): Promise<any> {
+        console.log("Get Users");
+        let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                        // return await res.json({
+                        //     success: false,
+                        //     message: 'Failed to authenticate token.'
+                        // });
+                    } else {
+                        return userModel.find();
+
+                    }
+                });
+            }
+            else {
+               
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+                // await res.status(403).send({
+                //     success: false,
+                //     message: 'No token provided.'
+                // });
+            }
     }
 
-    public async getUserById(id: string): Promise<IUser> {
-        return userModel.findById(id);
+    public async getUserById(req: any): Promise<any> {
+        let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                       
+                    } else {
+                        return userModel.findById(req.params.id);
+
+                    }
+                });
+            }
+            else {
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+            }
     }
 
     public async saveUser(userData: IUser): Promise<IUser> {
@@ -35,18 +88,63 @@ export class UserLib {
         return userModel.findOne({email: email});
     }
 
-    public async updateUser(userId: string, userData: IUser): Promise<IUser> {
-        const user: IUser = await userModel.findById(userId);
+    public async updateUser(req:any,userId: string, userData: IUser): Promise<any> {
+        let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                     
+                    } else {
+                        const user: IUser = await userModel.findById(userId);
         console.log("user",user);
         console.log("user Data",userData);
         user.set(userData);
 
         return user.save();
+                    }
+                });
+            }
+            else {
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+            }
+        
     }
 
-    public async deleteUser(id: string): Promise<IUser> {
+    public async deleteUser(req: any): Promise<any> {
+         let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                       
+                    } else {
+                        return userModel.findOneAndDelete({_id: req.params.id});
+                    }
+                });
+            }
+            else {
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+            }
+        
 
-        return userModel.findOneAndDelete({_id: id});
+        
     }
 
     public async loginUserAndCreateToken(email: string, password: string): Promise<any> {
@@ -66,42 +164,108 @@ export class UserLib {
         }
 
     }
-    public async addUserComment(reqbody:any):Promise<any>{
-        console.log(reqbody);
-        const user: IUser = await userModel.findById(reqbody.id);
-        console.log(user);
-        var userUpdateData=user
-
-        userUpdateData.comment.push(reqbody.comment);
-        user.set(userUpdateData);
-        // return user;
-        return user.save();
-        //  const user1: IUser = await userModel.findById(reqbody.id);
-        //  const user1 = await userModel.find({comment:{"$in":['Save']}});
-
-        //  return user1;
+    public async addUserComment(req:any,reqbody:any):Promise<any>{
+        let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                       
+                    } else {
+                        console.log(reqbody);
+                        const user: IUser = await userModel.findById(reqbody.id);
+                        console.log(user);
+                        var userUpdateData=user
+                
+                        userUpdateData.comment.push(reqbody.comment);
+                        user.set(userUpdateData);
+                        
+                        return user.save();
+                    }
+                });
+            }
+            else {
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+            }
+        
+       
     }
-    public async getUserComment(reqbody:any):Promise<any>{
-        const user = await userModel.aggregate([
-            {$match:{"_id":Types.ObjectId(reqbody.id)}},
-            {$project: {
-                comment: {$filter: {
-                    input: '$comment',
-                    as: 'status',
-                    cond: {$eq: ['$$status.status', 'Save']}
-                }},
-                _id: 0
-            }}
-        ])
-        return user;
+    public async getUserComment(req:any,reqbody:any):Promise<any>{
+        let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                        
+                    } else {
+                        const user = await userModel.aggregate([
+                            {$match:{"_id":Types.ObjectId(reqbody.id)}},
+                            {$project: {
+                                comment: {$filter: {
+                                    input: '$comment',
+                                    as: 'status',
+                                    cond: {$eq: ['$$status.status', 'Save']}
+                                }},
+                                _id: 0
+                            }}
+                        ])
+                        return user;
+                    }
+                });
+            }
+            else {
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+            }
+       
     }
-    public async updateComment(reqbody:any):Promise<any>{
-        console.log(reqbody);
-        const user=await userModel.updateOne({
-            "_id":Types.ObjectId(reqbody.id),"comment.id":reqbody.comment.id
-        },{
-            $set:{"comment.$.Text":reqbody.comment.Text}
-        })
-        return user;
+    public async updateComment(req:any,reqbody:any):Promise<any>{
+        let res:any;
+        const bearerHeader = req.headers['authorization'];
+            if (typeof bearerHeader !== 'undefined') {
+                const bearer = bearerHeader.split(' ');
+                console.log(bearer[1]);
+             return jwt.verify(bearer[1], 'secret',async (err:any, user:any) => {
+                    if (err) {
+                        console.error(err);
+                        return err;
+                      
+                    } else {
+                        console.log("Else condition 123456789");
+                        console.log(reqbody.id);
+                        console.log(reqbody.comment.id);
+                        console.log(reqbody.comment.Text);
+                        const  user= await userModel.updateOne({
+                            "_id":Types.ObjectId(reqbody.id),"comment.id":reqbody.comment.id
+                        },{
+                            $set:{"comment.$.Text":reqbody.comment.Text}
+                        })
+                        return user;
+                    }
+                });
+            }
+            else {
+                let err={
+                    success: false,
+                    message: 'No token provided.'
+                }
+                return err;
+            }
+       
     }
 }

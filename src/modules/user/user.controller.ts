@@ -1,4 +1,4 @@
-import { Application, Request, Response } from 'express';
+import { Application, Request, Response,NextFunction } from 'express';
 import { BaseCotroller } from '../BaseApi';
 import { logger } from './../../logger';
 import { UserLib } from './user.lib';
@@ -19,7 +19,7 @@ export class UserApi extends BaseCotroller {
         console.log("welcome");
         try {
             const user: UserLib = new UserLib();
-            const users: IUser[] = await user.getUsers();
+            const users: IUser[] = await user.getUsers(req);
             res.send(users);
         } catch (err) {
             logger.info(JSON.stringify({'json data': err}));
@@ -31,7 +31,7 @@ export class UserApi extends BaseCotroller {
         try {
             logger.info(JSON.stringify({'user callled' : req.params}));
             const user: UserLib = new UserLib();
-            const userDetails: IUser = await user.getUserById(req.params.id);
+            const userDetails: IUser = await user.getUserById(req);
             res.json(userDetails);
         } catch (err) {
             res.send(err);
@@ -56,7 +56,7 @@ export class UserApi extends BaseCotroller {
             logger.info(`userId ${userId}`);
             const userData: IUser = req.body;
             const user: UserLib = new UserLib();
-            const updatedUserResult: IUser = await user.updateUser(userId, userData);
+            const updatedUserResult: IUser = await user.updateUser(req,userId, userData);
             logger.info('user updated');
             res.send(updatedUserResult);
         } catch (err) {
@@ -71,7 +71,7 @@ export class UserApi extends BaseCotroller {
             logger.info(`id ${req.params.id}`);
             logger.info('delete');
 
-            const deletedUser: any = user.deleteUser(req.params.id);
+            const deletedUser: any = user.deleteUser(req);
             res.send(deletedUser);
         } catch (err) {
             logger.info(JSON.stringify(`delete err ${err}`));
@@ -79,7 +79,7 @@ export class UserApi extends BaseCotroller {
         }
     }
 
-    public async login(req: Request, res: Response): Promise <void> {
+    public async login(req: Request, res: Response,nxt:NextFunction): Promise <void> {
         try {
             const user: UserLib = new UserLib();
             const {email, password} = req.body;
@@ -98,7 +98,7 @@ export class UserApi extends BaseCotroller {
     public async addUserComment(req:Request,res:Response):Promise<void>{
         try{
             const user:UserLib = new UserLib();
-            const updatedUserResult: IUser = await user.addUserComment(req.body);
+            const updatedUserResult: IUser = await user.addUserComment(req,req.body);
             logger.info('user Comment Added');
             res.send(updatedUserResult);
         }
@@ -110,7 +110,7 @@ export class UserApi extends BaseCotroller {
     public async getUserComment(req:Request,res:Response):Promise<void>{
         try{
             const user:UserLib = new UserLib();
-            const getUserResult: IUser = await user.getUserComment(req.body);
+            const getUserResult: IUser = await user.getUserComment(req,req.body);
             logger.info('user Result Get');
             res.send(getUserResult);
         }
@@ -120,15 +120,42 @@ export class UserApi extends BaseCotroller {
     }
     public async updateuserComment(req:Request,res:Response):Promise<void>{
         try{
+            
+
             const user:UserLib=new UserLib();
-            const updatedUserResult=await user.updateComment(req.body);
+            const updatedUserResult=await user.updateComment(req,req.body);
             logger.info('user comment updated');
+            console.log(updatedUserResult);
             res.send(updatedUserResult)
 
         }
         catch(err){
+            // console.log("main function error");
+            // console.log(err);
             res.status(400).send(err);
         }
+    }
+
+    public verifyToken(req:Request,res:Response,nxt:NextFunction){
+         // get auth header value
+    console.log(req.headers);
+    const bearerHeader=req.headers['authorization'];
+    console.log(bearerHeader);
+    // check if bearer is undefined
+    if(typeof bearerHeader !== 'undefined'){
+        // split at the space
+        const bearer = bearerHeader.split(' ');
+        // get token from array
+        const bearerToken=bearer[1];
+        // set the token
+        // req.token=bearerToken
+        // next middleware
+        nxt();
+
+    }
+    else{
+        res.status(403).send("Authentication token not passed")
+    }
     }
 
     public init(): void {
@@ -140,6 +167,6 @@ export class UserApi extends BaseCotroller {
         this.router.post('/login', this.login);
         this.router.post('/comment',this.addUserComment);
         this.router.post('/getComment',this.getUserComment);
-        this.router.post('/updateComment',this.updateuserComment);
+        this.router.post('/updateComment',this.verifyToken,this.updateuserComment);
     }
 }

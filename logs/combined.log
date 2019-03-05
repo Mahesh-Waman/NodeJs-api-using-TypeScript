@@ -132,3 +132,87 @@
 {"message":"called init","level":"info"}
 {"message":"Server listening on : 3000","level":"info"}
 {"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc3OTA2NCwiZXhwIjoxNTUxODY1NDY0fQ.xuxluzR9PgveOkY7g0AHK66fRDG-kV0L3tVsIlKQVbY\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4MDY5MCwiZXhwIjoxNTUxODY3MDkwfQ.TEdwy43R2Q1krLRmip-XIiINrpmo5j4wbXyvckU_cXc\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4MDk0NSwiZXhwIjoxNTUxODY3MzQ1fQ.7rf9Y1Exc-aCqkJhKR0T0PPdeqo5yB-H-_fkXIsn0rg\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4MTI2OSwiZXhwIjoxNTUxODY3NjY5fQ.VoUAd3atKntH3rwK7MrsO2TMjkjjONImYqicU9fYDCU\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4MTM4NywiZXhwIjoxNTUxODY3Nzg3fQ.CNqlhYTbtThxEXxpX3NlK176UdxjQP1cBaQdQUfdGGg\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4MTU5OCwiZXhwIjoxNTUxODY3OTk4fQ.lDmDvAnF2YRzGSjycbPl7uDKVa7NbPgojGpO5SxS51Q\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4MTg1OCwiZXhwIjoxNTUxODY4MjU4fQ.XjTFuhWQIq38XKUaHPacKpYIgC1qPfojXTqhP9DS5QM\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4NDA4NCwiZXhwIjoxNTUxODcwNDg0fQ.8bwnJwdai8YpTIo-e6EOAN82-e7C_ZwB7vEkN4ch5U8\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4NDIxMiwiZXhwIjoxNTUxODcwNjEyfQ.7KlCFBpkMc3XReMK2TIbvLmiYhrcS8r0f_zXhVLMMA8\"}}","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4NDcxMiwiZXhwIjoxNTUxODcxMTEyfQ.-PcJWCkSXZJRH0uev_wc9iJdyv37vxVE_C3EJR9A2yA\"}}","level":"info"}
+{"message":"user comment updated","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"level":"info"}
+{"level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"level":"info"}
+{"message":"{\"json data\":{}}","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"json data\":{}}","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"json data\":{}}","level":"info"}
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"message":"{\"loggedI nUser \":{\"user\":{\"comment\":[],\"_id\":\"5c7951da6fb20e2fe5229286\",\"name\":\"pqr\",\"email\":\"pqr@gmail.com\",\"userName\":\"pqr stuv\",\"password\":\"$2b$10$PEetabbKlDDoBMFc2UeQu.kuIOWdM0OWIAeYMIZnXDKIJ5WwWfWWa\",\"mobileNo\":1235869470,\"created_date\":\"2019-03-01T15:38:02.094Z\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNzk1MWRhNmZiMjBlMmZlNTIyOTI4NiIsImlhdCI6MTU1MTc4NzI4MCwiZXhwIjoxNTUxODczNjgwfQ.4To9krZKL1JjiZTjtXAFMY47BvwA7N82Qoi_tggglqg\"}}","level":"info"}
