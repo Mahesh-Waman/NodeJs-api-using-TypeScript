@@ -2,13 +2,13 @@
 Creating CURD api using TypeScript in nodeJs
 
 
-#prerequisists:
+# prerequisists:
 node 8
 
-#how to setup 
+# how to setup 
 npm install
 
-#run app 
+# run app 
 npm run dev
 
 
